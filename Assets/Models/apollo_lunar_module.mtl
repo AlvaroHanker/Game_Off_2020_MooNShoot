@@ -1,0 +1,85 @@
+newmtl aluminum_pieces_mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal apollo_lunar_module/apollo_lunar_module_aluminum_pieces_mat_Normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness apollo_lunar_module/apollo_lunar_module_aluminum_pieces_mat_Roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm apollo_lunar_module/apollo_lunar_module_aluminum_pieces_mat_Metallic.png
+Ns 16
+map_Kd apollo_lunar_module/apollo_lunar_module_aluminum_pieces_mat_BaseColor.png
+newmtl window_mat
+Pr 0.215
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal apollo_lunar_module/apollo_lunar_module_window_mat_Normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm apollo_lunar_module/apollo_lunar_module_window_mat_Metallic.png
+Ns 16
+map_Kd apollo_lunar_module/apollo_lunar_module_window_mat_BaseColor.png
+newmtl aluminum_capsule_mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal apollo_lunar_module/apollo_lunar_module_aluminum_capsule_mat_Normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness apollo_lunar_module/apollo_lunar_module_aluminum_capsule_mat_Roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm apollo_lunar_module/apollo_lunar_module_aluminum_capsule_mat_Metallic.png
+Ns 16
+map_Kd apollo_lunar_module/apollo_lunar_module_aluminum_capsule_mat_BaseColor.png
+newmtl darker_aluminum_mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal apollo_lunar_module/apollo_lunar_module_darker_aluminum_mat_Normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness apollo_lunar_module/apollo_lunar_module_darker_aluminum_mat_Roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm apollo_lunar_module/apollo_lunar_module_darker_aluminum_mat_Metallic.png
+Ns 16
+map_Kd apollo_lunar_module/apollo_lunar_module_darker_aluminum_mat_BaseColor.png
+newmtl gold_mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal apollo_lunar_module/apollo_lunar_module_gold_mat_Normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness apollo_lunar_module/apollo_lunar_module_gold_mat_Roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm apollo_lunar_module/apollo_lunar_module_gold_mat_Metallic.png
+Ns 16
+map_Kd apollo_lunar_module/apollo_lunar_module_gold_mat_BaseColor.png
