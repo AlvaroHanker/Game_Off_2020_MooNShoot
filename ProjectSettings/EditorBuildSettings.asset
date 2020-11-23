@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: cbfe36cfddfde964d9dfce63a355d5dd
+    path: Assets/Scenes/Lobby.unity
+    guid: 74889e67c73ef7d4399c98fea6d268ac
+  - enabled: 1
+    path: Assets/Scenes/Room.unity
+    guid: 64997a2ec648d66479eefe7ee8f636be
+  - enabled: 1
+    path: Assets/Scenes/Blocking.unity
+    guid: 81d5262afaf7bec4395ce4c7655ebca7
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f207021fd5d360746a16fb5b0db9670c,
       type: 2}
