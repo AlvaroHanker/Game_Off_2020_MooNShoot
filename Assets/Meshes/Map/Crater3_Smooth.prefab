@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3317006124781796086}
   - component: {fileID: 1848592313948239187}
   - component: {fileID: 4486556800483983769}
+  - component: {fileID: 4384286804703356628}
   m_Layer: 0
   m_Name: Crater3_Smooth
   m_TagString: Untagged
@@ -58,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 670224309865224971, guid: 794300fe8dceb0e4bb8158a88a168b8a, type: 3}
+  - {fileID: 2100000, guid: e2f4b6cfebeb6684ebf9bb781f984091, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,3 +80,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &4384286804703356628
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2685147941724332108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.0746208
+  m_Height: 0.14098787
+  m_Direction: 1
+  m_Center: {x: 0.001776848, y: -0.0009459446, z: 0.014729042}
