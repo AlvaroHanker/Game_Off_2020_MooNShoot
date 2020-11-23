@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1100645674457191099
+--- !u!114 &-2988320639287472265
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,15 +20,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Rock
-  m_Shader: {fileID: -6465566751694194690, guid: 0c413a15897d9b94283b9c0f7ab58d8a,
-    type: 3}
-  m_ShaderKeywords: _DOUBLESIDED_ON
-  m_LightmapFlags: 2
+  m_Name: Space Rock Material (Shiny)
+  m_Shader: {fileID: 4800000, guid: c4edd00ff2db5b24391a4fcb1762e459, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 1
-  m_CustomRenderQueue: -1
-  stringTagMap: {MotionVector: User}
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 2000
+  stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
   - MOTIONVECTORS
@@ -56,7 +55,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: c10c326e807041542b536ee3f68a9003, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissiveColorMap:
@@ -79,17 +78,9 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_7B3B8A1C_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 4c0856a3e7b93914c9644d6270e56eb6, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _SampleTexture2D_A76C3BE6_Texture_1:
-        m_Texture: {fileID: 2800000, guid: 02d4165b3135ef648bb20b2794e04940, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _UnlitColorMap:
-        m_Texture: {fileID: 2800000, guid: 4c0856a3e7b93914c9644d6270e56eb6, type: 3}
-        m_Scale: {x: 100, y: 100}
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AddPrecomputedVelocity: 0
@@ -100,7 +91,7 @@ Material:
     - _AlphaSrcBlend: 1
     - _BlendMode: 0
     - _BumpScale: 1
-    - _CullMode: 0
+    - _CullMode: 2
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DistortionBlendMode: 0
@@ -118,17 +109,18 @@ Material:
     - _DistortionSrcBlend: 1
     - _DistortionVectorBias: -1
     - _DistortionVectorScale: 2
-    - _DoubleSidedEnable: 1
+    - _DoubleSidedEnable: 0
     - _DstBlend: 0
+    - _EmissionScaleUI: 1
     - _EmissiveExposureWeight: 1
     - _EmissiveIntensity: 1
     - _EmissiveIntensityUnit: 0
     - _EnableFogOnTransparent: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0.3
     - _GlossyReflections: 1
     - _IncludeIndirectLighting: 1
-    - _Metallic: 0
+    - _Metallic: 0.9
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
@@ -154,8 +146,9 @@ Material:
     - _ZTestTransparent: 4
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.6226415, g: 0.31425774, b: 0.31425774, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissiveColor: {r: 0.6226415, g: 0.31425774, b: 0.31425774, a: 1}
+    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissiveColorLDR: {r: 0, g: 0, b: 0, a: 1}
-    - _UnlitColor: {r: 1, g: 0.48584908, b: 0.48584908, a: 1}
+    - _UnlitColor: {r: 0.23627451, g: 0.21982914, b: 0.7169812, a: 1}

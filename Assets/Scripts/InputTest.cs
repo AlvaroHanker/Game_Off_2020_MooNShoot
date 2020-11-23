@@ -11,6 +11,14 @@ public class InputTest : MonoBehaviour
     private float xRotation = 0f;
     private float yRotation = 0f;
 
+    public Box playerBox;
+
+    public bool PickedBox = false;
+
+
+    public Material playerMaterial;
+    public Material defaultMaterial;
+
 
     private void Start()
     {
@@ -44,6 +52,32 @@ public class InputTest : MonoBehaviour
         if (InputManager.ShootGunButton())
             Debug.Log("Shoot Gun Button (left click / R2)");
 
+
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            playerBox.MineralAcquired();
+        }
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            playerBox.DropMineral();
+        }
+
+        if (InputManager.SprintButton())
+        {
+            if (!PickedBox)
+            {
+                playerBox.transform.parent = transform;
+                playerBox.transform.position = transform.position + new Vector3(0.0f, 2.0f, 0.0f);
+                PickedBox = true;
+                playerBox.ChangeBoxOwner(this.gameObject);
+            }else if (PickedBox)
+            {
+                playerBox.transform.parent = null;
+                playerBox.transform.position = transform.position + transform.forward * 2;
+                PickedBox = false;
+            }
+        }
+
         MovePlayer();
         RotateCamera();
     }
@@ -73,9 +107,7 @@ public class InputTest : MonoBehaviour
         yRotation += mouseX;
         //yRotation = Mathf.Clamp(yRotation, -90f, 90f);
 
-        //camera.transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
         transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
-        //camera.transform.Rotate(Vector3.up * mouseX);
-        camera.transform.Rotate(Vector3.right * xRotation);
+        //camera.transform.Rotate(Vector3.right * xRotation);
     }
 }
