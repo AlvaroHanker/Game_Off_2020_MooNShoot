@@ -18,6 +18,10 @@ public class Box : MonoBehaviour
     public float currentcooldownTime = 0.0f;
     public bool coolingdown = false;
 
+    public Material boxMaterial;
+    public List<Texture2D> texturasIndex;
+    private int texInd = 0;
+
     private void Awake()
     {
         InitializeBox();
@@ -52,6 +56,7 @@ public class Box : MonoBehaviour
         {
             MineralFragment mineralDetected = other.gameObject.GetComponent<MineralFragment>();
             AcquireMineral(mineralDetected);
+
         }
     }
 
@@ -69,6 +74,8 @@ public class Box : MonoBehaviour
             mineralAmount = Mathf.Clamp((mineralAmount + 1), 0, maxMineralAmount);
             Destroy(mineral.gameObject);
             Debug.Log("Mineral recogido!");
+            texInd = CheckAmount();
+            boxMaterial.SetTexture("MineralFeedBack", texturasIndex[texInd]);
         }
     }
 
@@ -172,7 +179,23 @@ public class Box : MonoBehaviour
         }
     }
 
-
+    private int CheckAmount()
+    {
+        int textureIndex = 0;
+        if (mineralAmount > 7)
+            textureIndex += 1;
+        if (mineralAmount>21)
+            textureIndex += 1;
+        if (mineralAmount > 28)
+            textureIndex += 1;
+        if (mineralAmount > 35)
+            textureIndex += 1;
+        if (mineralAmount > 42)
+            textureIndex += 1;
+        if (mineralAmount > 49)
+            textureIndex += 1;
+        return textureIndex;
+    }
 
 
     //ESTO A BORRAR, SOLO ES PARA PRUEBAS EN INPUTTEST
@@ -180,5 +203,5 @@ public class Box : MonoBehaviour
     {
         mineralAmount = Mathf.Clamp((mineralAmount + 1), 0, maxMineralAmount);
     }
-
+    
 }

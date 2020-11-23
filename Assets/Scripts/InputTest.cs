@@ -108,6 +108,6 @@ public class InputTest : MonoBehaviour
         //yRotation = Mathf.Clamp(yRotation, -90f, 90f);
 
         transform.localRotation = Quaternion.Euler(0f, yRotation, 0f);
-        //camera.transform.Rotate(Vector3.right * xRotation);
+        camera.transform.Rotate(Vector3.right * xRotation);
     }
 }
