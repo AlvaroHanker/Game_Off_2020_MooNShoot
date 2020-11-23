@@ -72,4 +72,8 @@ public static class InputManager
     {
         return Input.GetButtonDown("shoot");
     }
+
+    public static bool Exit() {
+        return Input.GetButtonDown("Cancel");
+    }
 }
