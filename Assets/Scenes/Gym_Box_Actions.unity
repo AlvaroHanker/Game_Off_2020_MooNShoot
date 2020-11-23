@@ -6625,6 +6625,8 @@ MonoBehaviour:
   cooldownTime: 2
   currentcooldownTime: 0
   coolingdown: 0
+  boxMaterial: {fileID: 0}
+  texturasIndex: []
 --- !u!54 &2039973695
 Rigidbody:
   m_ObjectHideFlags: 0
